@@ -1,0 +1,5 @@
+let g:neoformat_enabled_c = []
+let g:neoformat_enabled_cpp = []
+let g:neoformat_enabled_ocaml = ['ocamlformat']
+let g:neoformat_enabled_rust = []
+let g:neoformat_enabled_yaml = []

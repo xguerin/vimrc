@@ -1,0 +1,10 @@
+nnoremap <TAB>j     :tabfirst<CR>
+nnoremap <TAB>l     :tabnext<CR>
+nnoremap <TAB><TAB> :tabnext<CR>
+nnoremap <TAB>h     :tabprev<CR>
+nnoremap <TAB>k     :tablast<CR>
+nnoremap <TAB>t     :tabedit<Space>
+nnoremap <TAB>e     <C-W>T
+nnoremap <TAB>n     :tabnew<CR>
+nnoremap <TAB>m     :tabm<Space>
+nnoremap <TAB>d     :tabclose<CR>
