@@ -44,7 +44,7 @@ Plug 'w0rp/ale', { 'for': [ 'perl', 'python' ] }
 Plug 'airblade/vim-gitgutter'
 Plug 'chriskempson/base16-vim'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'itchyny/lightline.vim'
+Plug 'xguerin/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vimtaku/hl_matchit.vim'
 
