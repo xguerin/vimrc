@@ -17,7 +17,7 @@ Plug 'wannesm/wmgraphviz.vim', { 'for': 'dot' }
 
 Plug 'Keithbsmiley/investigate.vim'
 Plug 'MattesGroeger/vim-bookmarks'
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-oblique'
