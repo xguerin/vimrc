@@ -114,8 +114,8 @@ if has('autocmd')
   augroup LANG
     au!
 
-    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,sql,ragel,spl setl formatoptions=croql number
-    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,sql,ragel,spl setl autoindent
+    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,sql,ragel,scala setl formatoptions=croql number
+    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,sql,ragel,scala setl autoindent
 
     autocmd FileType markdown setl ts=4 sts=4 sw=4
     autocmd FileType minimal setl noet tw=100
@@ -124,7 +124,7 @@ if has('autocmd')
     autocmd FileType tex setl ts=4 sts=4 sw=4 tw=80 autoindent number
 
     if ! &diff
-      autocmd FileType sh,rc,ruby,lua,python,ocaml,minimal,ragel,perl,tex,markdown,spl call EnableHighlightEOL()
+      autocmd FileType sh,rc,ruby,lua,python,ocaml,minimal,ragel,perl,tex,markdown,scala call EnableHighlightEOL()
     end
 
     autocmd FileType json setl foldmethod=syntax comments=://
@@ -133,7 +133,7 @@ if has('autocmd')
     autocmd FileType ragel setl syntax=ragel foldmethod=indent comments=:#
     autocmd FileType ruby setl syntax=ruby foldmethod=indent comments=:#
     autocmd FileType sh,rc setl syntax=zsh foldmethod=indent comments=:#
-    autocmd FileType spl setl smartindent foldmethod=indent comments=://
+    autocmd FileType scala setl smartindent foldmethod=indent comments=://
 
     autocmd FileType tex setl foldmethod=indent
     autocmd FileType rl setl number
@@ -173,9 +173,9 @@ if has('autocmd')
 
     autocmd FileType rust setl foldmethod=syntax
 
-    autocmd FileType c,cpp,rust set omnifunc=lsp#complete
-    autocmd FileType c,cpp,rust inoremap <C-Space> <C-x><C-o>
-    autocmd FileType c,cpp,rust inoremap <C-@> <C-x><C-o>
+    autocmd FileType c,cpp,rust,scala set omnifunc=lsp#complete
+    autocmd FileType c,cpp,rust,scala inoremap <C-Space> <C-x><C-o>
+    autocmd FileType c,cpp,rust,scala inoremap <C-@> <C-x><C-o>
   augroup end
 
 endif
