@@ -61,4 +61,4 @@ runtime macros/matchit.vim
 
 " Use a long dash for folding, space for diffing.
 
-set fillchars+=fold:—,diff:\ 
+set fillchars=vert:\|,fold:─,diff:\ 

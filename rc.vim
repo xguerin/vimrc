@@ -24,4 +24,5 @@ source $HOME/.vim/rc/rust.vim
 source $HOME/.vim/rc/lsp.vim
 source $HOME/.vim/rc/neoformat.vim
 source $HOME/.vim/rc/highlight.vim
+source $HOME/.vim/rc/fold.vim
 source $HOME/.vim/rc/autocmd.vim

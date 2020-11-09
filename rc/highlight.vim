@@ -1,6 +1,3 @@
-highlight Folded gui=italic
-highlight Folded cterm=italic
-
 highlight Comment cterm=italic
 highlight Comment gui=italic
 
