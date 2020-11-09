@@ -4,7 +4,7 @@ let g:mapleader = "\<Space>"
 
 " Set the default shell
 
-set shell=/bin/bash
+set shell=bash
 
 " Configuration
 
