@@ -6,12 +6,13 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'dccmx/vim-lemon-syntax'
 Plug 'lifepillar/pgsql.vim'
-Plug 'neapel/vim-bnfc-syntax', { 'for': [ 'bnfc' ] }
-Plug 'rhysd/vim-clang-format', { 'for': [ 'c', 'cpp' ] }
+Plug 'neapel/vim-bnfc-syntax' , { 'for': 'bnfc'}
+Plug 'rhysd/vim-clang-format' , { 'for': [ 'c', 'cpp' ] }
 Plug 'sheerun/vim-polyglot'
 Plug 'rust-lang/rust.vim'
-Plug 'vim-scripts/ebnf.vim', { 'for': [ 'ebnf' ] }
-Plug 'wannesm/wmgraphviz.vim', { 'for': 'dot' }
+Plug 'ocaml/vim-ocaml'        , { 'for': [ 'dune', 'ocaml' ] }
+Plug 'vim-scripts/ebnf.vim'   , { 'for': 'ebnf' }
+Plug 'wannesm/wmgraphviz.vim' , { 'for': 'dot' }
 
 " Tools
 

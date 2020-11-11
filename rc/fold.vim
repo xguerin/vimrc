@@ -10,3 +10,5 @@ function! NeatFoldText()
 endfunction
 
 set foldtext=NeatFoldText()
+
+let g:ocaml_folding=1
