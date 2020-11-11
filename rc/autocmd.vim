@@ -78,9 +78,6 @@ if has('autocmd')
     autocmd FileType * setl nolisp
     autocmd FileType * call DisableHighlightEOL()
 
-    " Snakemake
-    au BufNewFile,BufRead Snakefile setl syntax=python ts=2 et sts=2 sw=2 foldmethod=indent comments=:#
-
     " Set wrap for mail
     autocmd FileType mail setl wrap
 
@@ -92,7 +89,16 @@ if has('autocmd')
   "
   augroup COMMENTS
     au!
-    autocmd FileType ocaml setl commentstring=(*\ %s\ *)
+    autocmd FileType json setl comments=://
+    autocmd FileType lua setl comments=:--
+    autocmd FileType minimal setl comments=:#
+    autocmd FileType ocaml setl comments=sr:(*,mb:*,el:*) commentstring=(*\ %s\ *)
+    autocmd FileType perl setl comments=:#
+    autocmd FileType python setl comments=:#
+    autocmd FileType ragel setl comments=:#
+    autocmd FileType ruby setl comments=:#
+    autocmd FileType sh,rc setl comments=:#
+    autocmd FileType vim setl comments=:\"
   augroup end
   "
   " Tags
@@ -106,7 +112,7 @@ if has('autocmd')
   " Sign column
   "
   augroup SIGNS
-    autocmd Filetype ocaml,c,cpp,javascript,rust setl signcolumn=yes
+    autocmd Filetype ocaml,c,cpp,javascript,rust,vim setl signcolumn=yes
   augroup end
   "
   " Other languages
@@ -114,33 +120,34 @@ if has('autocmd')
   augroup LANG
     au!
 
-    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,sql,ragel setl formatoptions=croql number
-    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,sql,ragel setl autoindent
+    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,sql,ragel,vim setl formatoptions=croql number
+    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,sql,ragel,vim setl autoindent
 
     autocmd FileType markdown setl ts=4 sts=4 sw=4
     autocmd FileType minimal setl noet tw=100
     autocmd FileType yaml setl ts=2 sts=2 sw=2
     autocmd FileType c,cpp,ocaml setl ts=2 sts=2 sw=2 tw=80
     autocmd FileType tex setl ts=4 sts=4 sw=4 tw=80 autoindent number
+    autocmd FileType vim setl ts=2 sts=2 sw=2
 
     if ! &diff
       autocmd FileType sh,rc,ruby,lua,python,ocaml,minimal,ragel,perl,tex,markdown call EnableHighlightEOL()
     end
 
-    autocmd FileType json setl foldmethod=syntax comments=://
-    autocmd FileType minimal setl syntax=minimal foldmethod=indent comments=:#
-    autocmd FileType perl setl syntax=perl foldmethod=indent comments=:#
-    autocmd FileType ragel setl syntax=ragel foldmethod=indent comments=:#
-    autocmd FileType ruby setl syntax=ruby foldmethod=indent comments=:#
-    autocmd FileType sh,rc setl syntax=zsh foldmethod=indent comments=:#
+    autocmd FileType json setl foldmethod=syntax
+    autocmd FileType minimal setl syntax=minimal foldmethod=indent
+    autocmd FileType perl setl syntax=perl foldmethod=indent
+    autocmd FileType ragel setl syntax=ragel foldmethod=indent
+    autocmd FileType ruby setl syntax=ruby foldmethod=indent
+    autocmd FileType sh,rc setl syntax=zsh foldmethod=indent
 
     autocmd FileType tex setl foldmethod=indent
     autocmd FileType rl setl number
 
-    autocmd FileType lua setl foldmethod=indent comments=:--
-    autocmd FileType python setl et foldmethod=indent comments=:#
+    autocmd FileType lua setl foldmethod=indent
+    autocmd FileType python setl et foldmethod=indent
 
-    autocmd FileType ocaml setl et foldmethod=indent comments=sr:(*,mb:*,el:*)
+    autocmd FileType ocaml setl et foldmethod=indent
     autocmd FileType make setl noet
 
     autocmd FileType ocaml set omnifunc=lsp#complete
