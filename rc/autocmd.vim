@@ -147,7 +147,7 @@ if has('autocmd')
     autocmd FileType lua setl foldmethod=indent
     autocmd FileType python setl et foldmethod=indent
 
-    autocmd FileType ocaml setl et foldmethod=indent
+    autocmd FileType ocaml setl et
     autocmd FileType make setl noet
 
     autocmd FileType ocaml set omnifunc=lsp#complete
