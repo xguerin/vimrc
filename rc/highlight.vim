@@ -28,8 +28,8 @@ highlight LspErrorText ctermbg=18 ctermfg=8 guibg=#393939 guifg=red
 highlight EndOfBuffer ctermfg=0 ctermbg=0
 highlight EndOfBuffer guifg=#2d2d2d guibg=#2d2d2d
 
-highlight Search cterm=italic ctermbg=18 ctermfg=NONE
-highlight Search gui=italic guibg=#393939 guifg=NONE
+highlight Search cterm=italic
+highlight Search gui=italic
 
 highlight htmlBold cterm=bold
 highlight htmlItalic cterm=italic
