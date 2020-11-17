@@ -48,6 +48,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'xguerin/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vimtaku/hl_matchit.vim'
+Plug 'wincent/terminus'
 
 "
 
