@@ -12,7 +12,7 @@ let g:lsp_virtual_text_enabled = 0
 let g:lsp_settings = {
       \  'clangd': {
       \    'cmd': [
-      \      '/usr/local/opt/llvm/bin/clangd',
+      \      'clangd',
       \      '--compile-commands-dir=build',
       \      '--all-scopes-completion',
       \      '--pch-storage=memory',
