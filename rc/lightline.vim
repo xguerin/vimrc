@@ -51,11 +51,11 @@ function! LightLineFugitive()
 endfunction
 
 function! LightLineFileformat()
-  return winwidth(0) > 70 ? (&fileformat . ' ' .  WebDevIconsGetFileFormatSymbol()) : ''
+  return winwidth(0) > 70 ? (&fileformat . ' ' .  WebDevIconsGetFileFormatSymbol()) . ' ' : ''
 endfunction
 
 function! LightLineFiletype()
-  return winwidth(0) > 70 ? (strlen(&filetype) ? (&filetype . ' ' .  WebDevIconsGetFileTypeSymbol() . '  ') : 'none ') : ''
+  return winwidth(0) > 70 ? (strlen(&filetype) ? (&filetype . ' ' .  WebDevIconsGetFileTypeSymbol() . ' ') : 'none') : ''
 endfunction
 
 function! LightLineFileencoding()
