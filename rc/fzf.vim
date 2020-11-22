@@ -1,5 +1,6 @@
 let g:fzf_command_prefix = 'Fzf'
 let g:fzf_layout = { 'down': '40%' }
+let g:fzf_preview_window = []
 
 noremap <Leader>r :FzfHistory<CR>
 noremap <Leader>f :FzfGFiles<CR>
