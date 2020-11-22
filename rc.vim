@@ -14,7 +14,6 @@ source $HOME/.vim/rc/casetrate.vim
 source $HOME/.vim/rc/easyalign.vim
 source $HOME/.vim/rc/fzf.vim
 source $HOME/.vim/rc/fugitive.vim
-source $HOME/.vim/rc/devicons.vim
 source $HOME/.vim/rc/bookmarks.vim
 source $HOME/.vim/rc/man.vim
 source $HOME/.vim/rc/bbye.vim

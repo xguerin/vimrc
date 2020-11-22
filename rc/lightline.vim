@@ -8,9 +8,6 @@ let g:lightline = {
       \ 'component_function': {
       \   'fugitive': 'LightLineFugitive',
       \   'filename': 'LightLineFilename',
-      \   'fileformat': 'LightLineFileformat',
-      \   'filetype': 'LightLineFiletype',
-      \   'fileencoding': 'LightLineFileencoding',
       \   'mode': 'LightLineMode',
       \ },
       \ 'separator': { 'left': '', 'right': '' },
@@ -41,25 +38,13 @@ endfunction
 function! LightLineFugitive()
   try
     if &filetype !~? 'vimfiler' && exists('*fugitive#head')
-      let l:mark = ' '  " edit here for cool mark
+      let l:mark = ' '
       let l:_ = b:git_head
       return strlen(l:_) ? l:mark . l:_ : ''
     endif
   catch
   endtry
   return ''
-endfunction
-
-function! LightLineFileformat()
-  return winwidth(0) > 70 ? (&fileformat . ' ' .  WebDevIconsGetFileFormatSymbol()) . ' ' : ''
-endfunction
-
-function! LightLineFiletype()
-  return winwidth(0) > 70 ? (strlen(&filetype) ? (&filetype . ' ' .  WebDevIconsGetFileTypeSymbol() . ' ') : 'none') : ''
-endfunction
-
-function! LightLineFileencoding()
-  return winwidth(0) > 70 ? (strlen(&fileencoding) ? &fileencoding : &encoding) : ''
 endfunction
 
 function! LightLineMode()
