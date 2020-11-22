@@ -5,8 +5,10 @@ let g:lsp_signs_error = {'text': '' }
 let g:lsp_signs_hint = {'text': '' }
 let g:lsp_signs_information = {'text': '' }
 let g:lsp_signs_warning = {'text': '' }
+
 let g:lsp_diagnostics_echo_cursor = 0
 let g:lsp_diagnostics_float_cursor = 1
+
 let g:lsp_virtual_text_enabled = 0
 
 let g:lsp_settings = {
@@ -23,3 +25,11 @@ let g:lsp_settings = {
 
 let g:lsp_settings_c = 'clangd'
 let g:lsp_settings_rust = 'ra_lsp_server'
+let g:lsp_settings_enable_suggestions = 0
+
+" Highlights
+
+highlight LspErrorText        ctermbg=18 ctermfg=8 guibg=#393939 guifg=red
+highlight LspHintText         ctermbg=18 ctermfg=8 guibg=#393939 guifg=green
+highlight LspInformationText  ctermbg=18 ctermfg=8 guibg=#393939 guifg=green
+highlight LspWarningText      ctermbg=18 ctermfg=8 guibg=#393939 guifg=yellow
