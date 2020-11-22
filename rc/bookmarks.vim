@@ -56,3 +56,10 @@ function! g:BMBufferFileLocation(file)
     return simplify(fnamemodify(a:file, ':p:h') . '/.' . l:filename)
   endif
 endfunction
+
+" Highlights
+
+highlight link BookmarkSign SignColumn
+highlight link BookmarkAnnotationSign SignColumn
+highlight link BookmarkLine CursorLine
+highlight link BookmarkAnnotationLine CursorLine
