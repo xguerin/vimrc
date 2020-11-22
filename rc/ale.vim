@@ -1,6 +1,6 @@
 let g:ale_sign_column_always = 0
-let g:ale_sign_error = ''
-let g:ale_sign_warning = ''
+let g:ale_sign_error = '●❱'
+let g:ale_sign_warning = '●❱'
 
 let g:ale_open_list = 0
 
@@ -14,5 +14,5 @@ let g:ale_linters = {
 highlight link ALEError cError
 highlight link ALEWarning cWarning
 
-highlight ALEWarningSign ctermbg=18 ctermfg=8 guibg=#393939 guifg=yellow
-highlight ALEErrorSign ctermbg=18 ctermfg=8 guibg=#393939 guifg=red
+highlight ALEErrorSign ctermbg=18 ctermfg=11 guibg=#393939 guifg=red
+highlight ALEWarningSign ctermbg=18 ctermfg=12 guibg=#393939 guifg=yellow
