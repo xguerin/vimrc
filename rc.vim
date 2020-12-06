@@ -1,6 +1,7 @@
 source $HOME/.vim/rc/encoding.vim
 source $HOME/.vim/rc/plugins.vim
 source $HOME/.vim/rc/defaults.vim
+source $HOME/.vim/rc/gui.vim
 source $HOME/.vim/rc/tabnav.vim
 source $HOME/.vim/rc/colorscheme.vim
 source $HOME/.vim/rc/spellcheck.vim
