@@ -19,4 +19,5 @@ endfunction
 
 set foldtext=NeatFoldText()
 
-let g:ocaml_folding=1
+let g:ocaml_folding = 1
+let g:c_no_comment_fold = 1

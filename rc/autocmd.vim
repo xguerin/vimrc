@@ -120,14 +120,14 @@ if has('autocmd')
   augroup LANG
     au!
 
-    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,sql,ragel,vim setl formatoptions=croql number
+    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,sql,ragel,vim setl formatoptions=croql
     autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,sql,ragel,vim setl autoindent
 
     autocmd FileType markdown setl ts=4 sts=4 sw=4
     autocmd FileType minimal setl noet tw=100
     autocmd FileType yaml setl ts=2 sts=2 sw=2
     autocmd FileType c,cpp,ocaml setl ts=2 sts=2 sw=2 tw=80
-    autocmd FileType tex setl ts=4 sts=4 sw=4 tw=80 autoindent number
+    autocmd FileType tex setl ts=4 sts=4 sw=4 tw=80 autoindent
     autocmd FileType vim setl ts=2 sts=2 sw=2
 
     if ! &diff
@@ -142,7 +142,7 @@ if has('autocmd')
     autocmd FileType sh,rc setl syntax=zsh foldmethod=indent
 
     autocmd FileType tex setl foldmethod=indent
-    autocmd FileType rl setl number
+    autocmd FileType rl setl
 
     autocmd FileType lua setl foldmethod=indent
     autocmd FileType python setl et foldmethod=indent
@@ -158,7 +158,7 @@ if has('autocmd')
   " Markup
   "
   augroup MARKUP
-    autocmd FileType markdown,yaml setl number cole=2
+    autocmd FileType markdown,yaml setl cole=2
   augroup end
   "
   " C family of languages
@@ -166,7 +166,7 @@ if has('autocmd')
   augroup CFAMILY
     au!
 
-    autocmd FileType c,cpp,cc,h,hpp,javascript,rust setl cindent smartindent autoindent formatoptions=croql number
+    autocmd FileType c,cpp,cc,h,hpp,javascript,rust setl cindent smartindent autoindent formatoptions=croql
     autocmd FileType rust setl ts=2 sts=2 sw=2 tw=80
 
     if ! &diff

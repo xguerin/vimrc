@@ -24,28 +24,29 @@ syn match  MinimalParentheses /[()]/
 syn keyword MinimalSpecial  NIL T _ ' ` ~ ARGV CONFIG ENV
 
 syn keyword MinimalFuncs
-      \ $+
       \ %
-      \ &
       \ *
       \ +
       \ -
       \ /
       \ <
+      \ <-
       \ <=
       \ <>
       \ <\|>
       \ =
       \ >
-      \ >&
       \ >=
+      \ >&
       \ \\
       \ \|>
+      \ $+
       \ and
       \ append
       \ assoc
       \ atm?
       \ caar
+      \ cddr
       \ cadar
       \ caddr
       \ cadr
@@ -54,6 +55,7 @@ syn keyword MinimalFuncs
       \ cdr
       \ chr
       \ chr?
+      \ close
       \ conc
       \ cond
       \ cons
@@ -75,7 +77,7 @@ syn keyword MinimalFuncs
       \ let
       \ last
       \ list
-      \ use
+      \ load
       \ lst?
       \ map
       \ map2
@@ -96,7 +98,7 @@ syn keyword MinimalFuncs
       \ quote
       \ read
       \ replc
-      \ readlines
+      \ readline
       \ rep
       \ rev
       \ setq
@@ -112,6 +114,7 @@ syn keyword MinimalFuncs
       \ unlink
       \ tru?
       \ when
+      \ while
       \ zip
 
 hi default link MinimalComment Comment
@@ -126,6 +129,6 @@ hi default link MinimalFuncs      Function
 hi default link MinimalOperator   Operator
 
 set lisp
-set lispwords=%,*,+,-,/,<,<-,<=,<>,=,>,>=,>!,>&,\\,\|>,and,append,assoc,atm?,caar,cadar,caddr,cadr,car,cdar,cdr,chr,chr?,conc,cond,cons,dedup,def,dup,eval,filter,flatten,foldl,foldr,if,in,insert,iter,last,len,let,list,use,lst?,map,map2,match,merge,nil?,not,ntoa,num?,or,out,prin,prinl,print,printl,prog,quit,quote,read,readlines,rev,setq,split,str,str?,sym,sym?,time,tru?,zip
+set lispwords=%,*,+,-,/,<,<-,<=,<>,<\|>,=,>,>=,>&,\\,\|>,$+,and,append,assoc,atm?,caar,cddr,cadar,caddr,cadr,car,cdar,cdr,chr,chr?,close,conc,cond,cons,dedup,def,dup,eval,filter,flatten,foldl,foldr,has,if,in,insert,iter,iter2,last,len,let,list,load,lst?,map,map2,match,merge,nil?,not,ntoa,num?,or,out,prin,prinl,print,printl,prog,quit,quote,read,readline,rep,rev,setq,split,str,str?,sym,sym?,time,truncl,truncr,unless,unlink,tru?,when,while,zip
 
 let b:current_syntax = "minimal"
