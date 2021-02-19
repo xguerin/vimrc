@@ -120,18 +120,18 @@ if has('autocmd')
   augroup LANG
     au!
 
-    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,sql,ragel,vim setl formatoptions=croql
-    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,sql,ragel,vim setl autoindent
+    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,spl,sql,ragel,vim setl formatoptions=croql
+    autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,spl,sql,ragel,vim setl autoindent
 
     autocmd FileType markdown setl ts=4 sts=4 sw=4
     autocmd FileType minimal setl noet tw=100
     autocmd FileType yaml setl ts=2 sts=2 sw=2
-    autocmd FileType c,cpp,ocaml setl ts=2 sts=2 sw=2 tw=80
+    autocmd FileType c,cpp,ocaml,spl setl ts=2 sts=2 sw=2 tw=80 number
     autocmd FileType tex setl ts=4 sts=4 sw=4 tw=80 autoindent
     autocmd FileType vim setl ts=2 sts=2 sw=2
 
     if ! &diff
-      autocmd FileType sh,rc,ruby,lua,python,ocaml,minimal,ragel,perl,tex,markdown call EnableHighlightEOL()
+      autocmd FileType sh,rc,ruby,lua,python,ocaml,minimal,ragel,perl,spl,tex,markdown call EnableHighlightEOL()
     end
 
     autocmd FileType json setl foldmethod=syntax
