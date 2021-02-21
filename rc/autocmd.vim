@@ -124,7 +124,7 @@ if has('autocmd')
     autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,perl,spl,sql,ragel,vim setl autoindent
 
     autocmd FileType markdown setl ts=4 sts=4 sw=4
-    autocmd FileType minimal setl noet tw=100
+    autocmd FileType minimal setl noet tw=100 number
     autocmd FileType yaml setl ts=2 sts=2 sw=2
     autocmd FileType c,cpp,ocaml,spl setl ts=2 sts=2 sw=2 tw=80 number
     autocmd FileType tex setl ts=4 sts=4 sw=4 tw=80 autoindent
