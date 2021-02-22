@@ -12,7 +12,6 @@ set autoread            " Automatically reload change
 set clipboard=unnamed   " Set the system clipboard
 set expandtab           " Use soft tabs
 set fileencoding=utf-8
-set foldlevelstart=1
 set history=1000
 set hlsearch            " Enable highlight search
 set incsearch           " Enable incremental search
