@@ -12,6 +12,7 @@ Plug 'rhysd/vim-clang-format' , { 'for': [ 'c', 'cpp' ] }
 Plug 'sheerun/vim-polyglot'
 Plug 'rust-lang/rust.vim'
 Plug 'ocaml/vim-ocaml'        , { 'for': [ 'dune', 'ocaml' ] }
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'vim-scripts/ebnf.vim'   , { 'for': 'ebnf' }
 Plug 'wannesm/wmgraphviz.vim' , { 'for': 'dot' }
 
