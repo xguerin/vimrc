@@ -19,6 +19,7 @@ source $HOME/.vim/rc/bookmarks.vim
 source $HOME/.vim/rc/man.vim
 source $HOME/.vim/rc/bbye.vim
 source $HOME/.vim/rc/undotree.vim
+source $HOME/.vim/rc/c.vim
 source $HOME/.vim/rc/clangformat.vim
 source $HOME/.vim/rc/rust.vim
 source $HOME/.vim/rc/lsp.vim

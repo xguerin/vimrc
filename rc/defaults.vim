@@ -8,27 +8,28 @@ set shell=bash
 
 " Configuration
 
-set autoread            " Automatically reload change
-set clipboard=unnamed   " Set the system clipboard
-set expandtab           " Use soft tabs
+set autoread                  " Automatically reload change
+set clipboard=unnamed         " Set the system clipboard
+set directory=$HOME/.vim/swap
+set expandtab                 " Use soft tabs
 set fileencoding=utf-8
 set history=1000
-set hlsearch            " Enable highlight search
-set incsearch           " Enable incremental search
-set laststatus=2        " Alwaays show status line
-set lazyredraw          " Don't redraw when executing macros/commands
-set modeline            " Enable modeline
-set mouse=a             " Enable mouse reporting
-set nobackup            " Disable backup files
-set noerrorbells        " Disable error bells
-set novisualbell        " Disable visual bell
-set nowritebackup       " Disable write backup
-set previewheight=20    " Set the preview height to 20 lines
-set ruler               " Show column/line position
-set shiftround          " Round indent to multiple of shiftwidth
+set hlsearch                  " Enable highlight search
+set incsearch                 " Enable incremental search
+set laststatus=2              " Alwaays show status line
+set lazyredraw                " Don't redraw when executing macros/commands
+set modeline                  " Enable modeline
+set mouse=a                   " Enable mouse reporting
+set nobackup                  " Disable backup files
+set noerrorbells              " Disable error bells
+set novisualbell              " Disable visual bell
+set nowritebackup             " Disable write backup
+set previewheight=20          " Set the preview height to 20 lines
+set ruler                     " Show column/line position
+set shiftround                " Round indent to multiple of shiftwidth
 set shiftwidth=2
 set showmatch
-set showtabline=2       " Always show tab line
+set showtabline=2             " Always show tab line
 set softtabstop=2
 set t_vb=
 set tabstop=2

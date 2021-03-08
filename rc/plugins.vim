@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 
 " Language support
 
+Plug 'bfrg/vim-cpp-modern'    , { 'for': [ 'c', 'cpp' ] }
 Plug 'dccmx/vim-lemon-syntax'
 Plug 'hjson/vim-hjson'        , { 'for': 'hjson' }
 Plug 'lifepillar/pgsql.vim'

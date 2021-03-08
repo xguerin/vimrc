@@ -177,7 +177,7 @@ if has('autocmd')
     autocmd FileType cpp,hpp setl formatoptions=croqlj cino=N-s,t0,g0,(0,l1 foldmethod=syntax
     autocmd FileType c,h setl cino=l1,t0,g0,(0 formatoptions=tcqlron foldmethod=syntax
 
-    autocmd FileType c,h,cpp,hpp call matchadd('Structure', '\W\zs\(UNUSED\)')
+    autocmd FileType c,h,cpp,hpp call matchadd('Structure', '\W\zs\(PACKED\|USED\|UNUSED\)')
 
     autocmd FileType rust setl foldmethod=syntax
 
