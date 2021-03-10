@@ -1,5 +1,5 @@
 function! FoldOverview()
-  if &filetype == 'c' || &filetype == 'cpp' || &filetype == 'rust'
+  if &filetype == 'c' || &filetype == 'cpp' || &filetype == 'rust' || &filetype == 'json'
     return getline(v:foldstart) . trim(getline(v:foldend))
   else
     return getline(v:foldstart)

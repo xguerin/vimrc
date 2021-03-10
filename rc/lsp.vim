@@ -9,6 +9,9 @@ let g:lsp_diagnostics_signs_information = {'text': '●❱' }
 let g:lsp_diagnostics_signs_priority = 11
 let g:lsp_diagnostics_signs_warning = {'text': '●❱' }
 
+let g:lsp_document_code_action_signs_priority = 11
+let g:lsp_document_code_action_signs_hint = {'text': '●❱' }
+
 let g:lsp_virtual_text_enabled = 0
 
 let g:lsp_settings = {
@@ -29,7 +32,8 @@ let g:lsp_settings_enable_suggestions = 0
 
 " Highlights
 
+highlight LspCodeActionText   ctermbg=18 ctermfg=6  guibg=#393939 guifg=blue
 highlight LspErrorText        ctermbg=18 ctermfg=11 guibg=#393939 guifg=red
 highlight LspHintText         ctermbg=18 ctermfg=8  guibg=#393939 guifg=green
 highlight LspInformationText  ctermbg=18 ctermfg=8  guibg=#393939 guifg=green
-highlight LspWarningText      ctermbg=18 ctermfg=12  guibg=#393939 guifg=yellow
+highlight LspWarningText      ctermbg=18 ctermfg=12 guibg=#393939 guifg=yellow
