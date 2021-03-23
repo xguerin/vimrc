@@ -9,7 +9,7 @@ set shell=bash
 " Configuration
 
 set autoread                  " Automatically reload change
-set clipboard=unnamed         " Set the system clipboard
+set clipboard=unnamedplus     " Set the system clipboard (X11)
 set directory=$HOME/.vim/swap
 set expandtab                 " Use soft tabs
 set fileencoding=utf-8
