@@ -9,6 +9,4 @@ function! ToggleConcealLevel()
   endif
 endfunction
 
-map <silent> <Leader>cl :call ToggleConcealLevel()<CR>
-
-
+map <silent> <Leader>k :call ToggleConcealLevel()<CR>

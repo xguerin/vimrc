@@ -21,6 +21,7 @@ let g:lsp_settings = {
       \      '--compile-commands-dir=build',
       \      '--all-scopes-completion',
       \      '--pch-storage=memory',
+      \      '--header-insertion=never',
       \      '-j=6'
       \   ],
       \  },
