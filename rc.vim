@@ -10,7 +10,6 @@ source $HOME/.vim/rc/eol.vim
 source $HOME/.vim/rc/conceal.vim
 source $HOME/.vim/rc/lightline.vim
 source $HOME/.vim/rc/projectionist.vim
-source $HOME/.vim/rc/ale.vim
 source $HOME/.vim/rc/casetrate.vim
 source $HOME/.vim/rc/easyalign.vim
 source $HOME/.vim/rc/fzf.vim
@@ -21,6 +20,7 @@ source $HOME/.vim/rc/bbye.vim
 source $HOME/.vim/rc/undotree.vim
 source $HOME/.vim/rc/c.vim
 source $HOME/.vim/rc/clangformat.vim
+source $HOME/.vim/rc/python.vim
 source $HOME/.vim/rc/rust.vim
 source $HOME/.vim/rc/lsp.vim
 source $HOME/.vim/rc/neoformat.vim

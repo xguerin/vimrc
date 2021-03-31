@@ -4,18 +4,18 @@ call plug#begin('~/.vim/plugged')
 
 " Language support
 
-Plug 'bfrg/vim-cpp-modern'    , { 'for': [ 'c', 'cpp' ] }
+Plug 'bfrg/vim-cpp-modern'      , { 'for': [ 'c', 'cpp' ] }
 Plug 'dccmx/vim-lemon-syntax'
-Plug 'hjson/vim-hjson'        , { 'for': 'hjson' }
+Plug 'hjson/vim-hjson'          , { 'for': 'hjson' }
 Plug 'lifepillar/pgsql.vim'
-Plug 'neapel/vim-bnfc-syntax' , { 'for': 'bnfc'}
-Plug 'rhysd/vim-clang-format' , { 'for': [ 'c', 'cpp' ] }
-Plug 'sheerun/vim-polyglot'
+Plug 'neapel/vim-bnfc-syntax'   , { 'for': 'bnfc'}
+Plug 'ocaml/vim-ocaml'          , { 'for': [ 'dune', 'ocaml' ] }
+Plug 'plasticboy/vim-markdown'  , { 'for': 'markdown' }
+Plug 'rhysd/vim-clang-format'   , { 'for': [ 'c', 'cpp' ] }
 Plug 'rust-lang/rust.vim'
-Plug 'ocaml/vim-ocaml'        , { 'for': [ 'dune', 'ocaml' ] }
-Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-Plug 'vim-scripts/ebnf.vim'   , { 'for': 'ebnf' }
-Plug 'wannesm/wmgraphviz.vim' , { 'for': 'dot' }
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-scripts/ebnf.vim'     , { 'for': 'ebnf' }
+Plug 'wannesm/wmgraphviz.vim'   , { 'for': 'dot' }
 
 " Tools
 
@@ -42,7 +42,6 @@ Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-repeat'
 Plug 'vim-scripts/Casetrate'
 Plug 'vim-utils/vim-man'
-Plug 'w0rp/ale', { 'for': [ 'perl', 'python' ] }
 
 " UI
 
