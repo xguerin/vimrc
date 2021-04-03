@@ -14,7 +14,7 @@ set directory=$HOME/.vim/swap
 set expandtab                 " Use soft tabs
 set fileencoding=utf-8
 set history=1000
-set hlsearch                  " Enable highlight search
+set nohlsearch                " Disable persistent highlight search
 set incsearch                 " Enable incremental search
 set laststatus=2              " Alwaays show status line
 set lazyredraw                " Don't redraw when executing macros/commands
