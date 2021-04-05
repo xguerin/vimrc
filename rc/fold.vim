@@ -17,7 +17,7 @@ function! NeatFoldText()
   return foldtextstart . repeat(foldchar, winwidth(0)-foldtextlength) . foldtextend
 endfunction
 
-set foldlevelstart=99
+set foldlevelstart=1
 set foldtext=NeatFoldText()
 
 let g:ocaml_folding = 1

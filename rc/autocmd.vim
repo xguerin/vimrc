@@ -135,10 +135,10 @@ if has('autocmd')
     end
 
     autocmd FileType json setl foldmethod=syntax
-    autocmd FileType minimal setl syntax=minimal foldmethod=indent
-    autocmd FileType ragel setl syntax=ragel foldmethod=indent
-    autocmd FileType ruby setl syntax=ruby foldmethod=indent
-    autocmd FileType sh,rc setl syntax=ksh foldmethod=indent
+    autocmd FileType minimal setl foldmethod=indent
+    autocmd FileType ragel setl foldmethod=indent
+    autocmd FileType ruby setl foldmethod=indent
+    autocmd FileType sh,rc setl number foldmethod=indent
 
     autocmd FileType tex setl foldmethod=indent
     autocmd FileType rl setl
