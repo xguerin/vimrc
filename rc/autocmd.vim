@@ -126,7 +126,7 @@ if has('autocmd')
     autocmd FileType minimal setl noet tw=100 number
     autocmd FileType yaml setl ts=2 sts=2 sw=2
     autocmd FileType c,cpp,ocaml,spl setl ts=2 sts=2 sw=2 tw=80 number
-    autocmd FileType python setl ts=2 sts=2 sw=2 tw=80 number
+    autocmd FileType python setl ts=2 sts=2 sw=2 tw=100 number
     autocmd FileType tex setl ts=4 sts=4 sw=4 tw=80 autoindent
     autocmd FileType vim setl ts=2 sts=2 sw=2
 
