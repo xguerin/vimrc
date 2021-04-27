@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'bfrg/vim-cpp-modern'      , { 'for': [ 'c', 'cpp' ] }
 Plug 'dccmx/vim-lemon-syntax'
 Plug 'hjson/vim-hjson'          , { 'for': 'hjson' }
+Plug 'jvirtanen/vim-hcl'        , { 'for': 'hcl' }
 Plug 'lifepillar/pgsql.vim'
 Plug 'neapel/vim-bnfc-syntax'   , { 'for': 'bnfc'}
 Plug 'ocaml/vim-ocaml'          , { 'for': [ 'dune', 'ocaml' ] }

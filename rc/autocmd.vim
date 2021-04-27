@@ -15,6 +15,8 @@ function SetLSPShortcuts()
   nnoremap <localleader>d :LspDefinition<CR>
   nnoremap <localleader>r :LspRename<CR>
   nnoremap <localleader>h :LspHover<CR>
+  nnoremap <localleader>[ :LspNextDiagnostic<CR>
+  nnoremap <localleader>] :LspPreviousDiagnostic<CR>
 endfunction()
 
 " Only do this part when compiled with support for autocommands.
@@ -122,9 +124,7 @@ if has('autocmd')
     autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,spl,sql,ragel,vim setl formatoptions=croql
     autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,spl,sql,ragel,vim setl autoindent
 
-    autocmd FileType markdown setl ts=2 sts=2 sw=2
     autocmd FileType minimal setl noet tw=100 number
-    autocmd FileType yaml setl ts=2 sts=2 sw=2
     autocmd FileType c,cpp,ocaml,spl setl ts=2 sts=2 sw=2 tw=80 number
     autocmd FileType python setl ts=2 sts=2 sw=2 tw=100 number
     autocmd FileType tex setl ts=4 sts=4 sw=4 tw=80 autoindent
@@ -157,7 +157,9 @@ if has('autocmd')
   " Markup
   "
   augroup MARKUP
-    autocmd FileType markdown,yaml setl cole=2
+    autocmd FileType markdown,yaml setl number cole=2
+    autocmd FileType markdown setl ts=2 sts=2 sw=2
+    autocmd FileType yaml setl ts=2 sts=2 sw=2 foldmethod=indent
   augroup end
   "
   " C family of languages
