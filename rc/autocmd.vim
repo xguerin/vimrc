@@ -58,7 +58,7 @@ if has('autocmd')
   "
   augroup LSP
     autocmd!
-    autocmd FileType c,cpp,ocaml,rust call SetLSPShortcuts()
+    autocmd FileType c,cpp,ocaml,python,rust call SetLSPShortcuts()
     "
     " OCaml LSP server
     "
