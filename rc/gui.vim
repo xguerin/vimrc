@@ -1,5 +1,4 @@
-if has('gui_macvim')
-  set guifont=PragmataPro-Regular:h14
+if has('gui')
+  set guifont=Iosevka\ Term\ 11
   set guioptions=a
-  set macligatures
 end
