@@ -24,6 +24,17 @@ let g:lsp_settings = {
       \      '--header-insertion=never',
       \      '-j=6'
       \     ],
+      \  },
+      \  'pyls': {
+      \    'workspace_config': {
+      \      'pyls': {
+      \        'plugins': {
+      \          'pylint': {
+      \            'enabled': v:true
+      \          }
+      \        }
+      \      }
+      \    }
       \  }
       \}
 
