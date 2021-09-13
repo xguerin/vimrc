@@ -158,7 +158,7 @@ if has('autocmd')
   "
   augroup MARKUP
     autocmd FileType markdown,yaml setl number cole=2
-    autocmd FileType markdown setl ts=2 sts=2 sw=2
+    autocmd FileType markdown setl ts=2 sts=2 sw=2 nofoldenable
     autocmd FileType yaml setl ts=2 sts=2 sw=2 foldmethod=indent
   augroup end
   "

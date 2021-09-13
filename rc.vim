@@ -12,6 +12,7 @@ source $HOME/.vim/rc/lightline.vim
 source $HOME/.vim/rc/projectionist.vim
 source $HOME/.vim/rc/casetrate.vim
 source $HOME/.vim/rc/easyalign.vim
+source $HOME/.vim/rc/functions.vim
 source $HOME/.vim/rc/fzf.vim
 source $HOME/.vim/rc/fugitive.vim
 source $HOME/.vim/rc/bookmarks.vim

@@ -18,11 +18,13 @@ let g:lsp_settings = {
       \  'clangd': {
       \    'cmd': [
       \      'clangd',
+      \      '--background-index',
+      \      '--clang-tidy',
       \      '--compile-commands-dir=build',
       \      '--all-scopes-completion',
       \      '--pch-storage=memory',
       \      '--header-insertion=never',
-      \      '-j=6'
+      \      '-j=6',
       \     ],
       \  },
       \  'pyls': {
@@ -30,6 +32,12 @@ let g:lsp_settings = {
       \      'pyls': {
       \        'plugins': {
       \          'pylint': {
+      \            'enabled': v:true,
+      \          },
+      \          'rope_completion': {
+      \            'enabled': v:true
+      \          },
+      \          'rope_rename': {
       \            'enabled': v:true
       \          }
       \        }
