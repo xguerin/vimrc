@@ -1,20 +1,20 @@
 function! FoldOverview()
+  let lines_count = v:foldend - v:foldstart + 1
   if &filetype == 'c' || &filetype == 'cpp' || &filetype == 'rust' || &filetype == 'json'
-    return getline(v:foldstart) . trim(getline(v:foldend))
+    let lines_count_text = printf(" %d lines ", lines_count)
+    return getline(v:foldstart) . lines_count_text . trim(getline(v:foldend))
   else
-    return getline(v:foldstart)
+    let lines_count_text = printf(" - %d lines", lines_count)
+    return getline(v:foldstart) . lines_count_text
   end
 endfunction
 
 function! NeatFoldText()
-  let line = '─┤ ' . substitute(FoldOverview(), '^\s*"\?\s*\|\s*"\?\s*{{' . '{\d*\s*', '', 'g') . ' ├'
-  let lines_count = v:foldend - v:foldstart + 1
-  let lines_count_text = '┤ ' . printf("%10s", lines_count . ' lines') . ' ├'
+  let line = substitute(FoldOverview(), '^\s*"\?\s*\|\s*"\?\s*{{' . '{\d*\s*', '', 'g')
   let foldchar = matchstr(&fillchars, 'fold:\zs.')
-  let foldtextstart = strpart(repeat('─', (v:foldlevel - 1)) . line, 0, (winwidth(0)*2)/3)
-  let foldtextend = lines_count_text . repeat(foldchar, 8)
-  let foldtextlength = strlen(substitute(foldtextstart . foldtextend, '.', 'x', 'g')) + &foldcolumn
-  return foldtextstart . repeat(foldchar, winwidth(0)-foldtextlength) . foldtextend
+  let foldtextstart = strpart(repeat(' ', (v:foldlevel - 2) * &shiftwidth) . line, 0, (winwidth(0)*2)/3)
+  let foldtextlength = strlen(substitute(foldtextstart, '.', 'x', 'g')) + &foldcolumn
+  return foldtextstart . repeat(foldchar, winwidth(0) - foldtextlength)
 endfunction
 
 set foldlevelstart=1
