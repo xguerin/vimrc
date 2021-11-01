@@ -10,9 +10,9 @@ function! FoldOverview()
 endfunction
 
 function! NeatFoldText()
-  let line = substitute(FoldOverview(), '^\s*"\?\s*\|\s*"\?\s*{{' . '{\d*\s*', '', 'g')
   let foldchar = matchstr(&fillchars, 'fold:\zs.')
-  let foldtextstart = strpart(repeat(' ', (v:foldlevel - 2) * &shiftwidth) . line, 0, (winwidth(0)*2)/3)
+  let indent  = strwidth(getline(v:foldstart)) - 1
+  let foldtextstart = strpart(FoldOverview(), 0, (winwidth(0)*2)/3)
   let foldtextlength = strlen(substitute(foldtextstart, '.', 'x', 'g')) + &foldcolumn
   return foldtextstart . repeat(foldchar, winwidth(0) - foldtextlength)
 endfunction
