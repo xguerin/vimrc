@@ -12,7 +12,7 @@ endfunction
 function! NeatFoldText()
   let foldchar = matchstr(&fillchars, 'fold:\zs.')
   let indent  = strwidth(getline(v:foldstart)) - 1
-  let foldtextstart = strpart(FoldOverview(), 0, (winwidth(0)*2)/3)
+  let foldtextstart = strpart(FoldOverview(), 0, (winwidth(0)*7)/8)
   let foldtextlength = strlen(substitute(foldtextstart, '.', 'x', 'g')) + &foldcolumn
   return foldtextstart . repeat(foldchar, winwidth(0) - foldtextlength)
 endfunction

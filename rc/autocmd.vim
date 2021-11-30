@@ -173,7 +173,6 @@ if has('autocmd')
 
     if ! &diff
       autocmd FileType c,cpp,cc,h,hpp,javascript,rust call EnableHighlightEOL()
-      autocmd FileType c,cpp,cc,h,hpp ClangFormatAutoEnable
     end
 
     autocmd FileType cpp,hpp setl formatoptions=croqlj cino=N-s,t0,g0,(0,l1 foldmethod=syntax

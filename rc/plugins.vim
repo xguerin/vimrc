@@ -12,7 +12,6 @@ Plug 'lifepillar/pgsql.vim'
 Plug 'neapel/vim-bnfc-syntax'   , { 'for': 'bnfc'}
 Plug 'ocaml/vim-ocaml'          , { 'for': [ 'dune', 'ocaml' ] }
 Plug 'plasticboy/vim-markdown'  , { 'for': 'markdown' }
-Plug 'rhysd/vim-clang-format'   , { 'for': [ 'c', 'cpp' ] }
 Plug 'rust-lang/rust.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-scripts/ebnf.vim'     , { 'for': 'ebnf' }
