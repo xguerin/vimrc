@@ -175,8 +175,8 @@ if has('autocmd')
       autocmd FileType c,cpp,cc,h,hpp,javascript,rust call EnableHighlightEOL()
     end
 
-    autocmd FileType cpp,hpp setl formatoptions=croqlj cino=N-s,t0,g0,(0,l1 foldmethod=syntax
-    autocmd FileType c,h setl cino=l1,t0,g0,(0 formatoptions=tcqlron foldmethod=syntax
+    autocmd FileType cpp,hpp setl formatoptions=croqlj cino=N-s,t0,g0,(0,l1,i0 foldmethod=syntax
+    autocmd FileType c,h setl cino=l1,t0,g0,(0,i0 formatoptions=tcqlron foldmethod=syntax
 
     autocmd FileType c,h,cpp,hpp call matchadd('Structure', '\W\zs\(PACKED\|USED\|UNUSED\)')
 
