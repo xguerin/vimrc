@@ -21,7 +21,6 @@ Plug 'wannesm/wmgraphviz.vim'   , { 'for': 'dot' }
 
 Plug 'Keithbsmiley/investigate.vim'
 Plug 'MattesGroeger/vim-bookmarks'
-Plug 'edkolev/vim-amake'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
@@ -32,7 +31,7 @@ Plug 'mbbill/undotree'
 Plug 'moll/vim-bbye'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/vim-lsp', { 'commit': 'a91419ea0ace6f791a43e0697946599fe7a9ae60' }
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'mattn/vim-lsp-settings'
 Plug 'sbdchd/neoformat'
