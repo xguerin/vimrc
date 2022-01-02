@@ -31,7 +31,7 @@ Plug 'mbbill/undotree'
 Plug 'moll/vim-bbye'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp', { 'commit': 'a91419ea0ace6f791a43e0697946599fe7a9ae60' }
+Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'mattn/vim-lsp-settings'
 Plug 'sbdchd/neoformat'
@@ -49,7 +49,6 @@ Plug 'chriskempson/base16-vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'xguerin/lightline.vim'
 Plug 'vimtaku/hl_matchit.vim'
-Plug 'wincent/terminus'
 
 "
 
