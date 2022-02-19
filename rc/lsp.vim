@@ -19,11 +19,12 @@ let g:lsp_settings = {
       \    'cmd': [
       \      'clangd',
       \      '--background-index',
+      \      '--completion-style=detailed',
       \      '--clang-tidy',
       \      '--compile-commands-dir=build',
       \      '--pch-storage=memory',
       \      '--header-insertion=never',
-      \      '-j=6',
+      \      '-j=8',
       \     ],
       \  },
       \  'pyls': {
