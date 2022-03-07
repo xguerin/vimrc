@@ -31,6 +31,9 @@ let g:lsp_settings = {
       \    'workspace_config': {
       \      'pyls': {
       \        'plugins': {
+      \          'pycodestyle': {
+      \            'enabled': v:false,
+      \          },
       \          'pylint': {
       \            'enabled': v:true,
       \          },
