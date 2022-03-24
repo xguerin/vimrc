@@ -1,4 +1,5 @@
 source $HOME/.vim/rc/encoding.vim
+source $HOME/.vim/rc/polyglot.vim
 source $HOME/.vim/rc/plugins.vim
 source $HOME/.vim/rc/defaults.vim
 source $HOME/.vim/rc/gui.vim
