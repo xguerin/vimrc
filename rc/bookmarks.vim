@@ -1,5 +1,5 @@
-let g:bookmark_sign = ''
-let g:bookmark_annotation_sign = ''
+let g:bookmark_sign = '⚑'
+let g:bookmark_annotation_sign = '⚐'
 let g:bookmark_show_warning = 0
 let g:bookmark_show_toggle_warning = 0
 let g:bookmark_center = 1
