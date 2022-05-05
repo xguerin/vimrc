@@ -124,7 +124,6 @@ if has('autocmd')
     autocmd FileType sh,rc,asm,s,S,ruby,json,lua,python,ocaml,minimal,spl,sql,ragel,vim setl autoindent
 
     autocmd FileType minimal setl noet tw=80 number
-    autocmd FileType c,cpp setl ts=3 sts=3 sw=3 tw=100 number
     autocmd FileType ocaml,spl setl ts=2 sts=2 sw=2 tw=80 number
     autocmd FileType python setl ts=2 sts=2 sw=2 tw=100 number
     autocmd FileType tex setl ts=4 sts=4 sw=4 tw=80 autoindent
@@ -167,7 +166,7 @@ if has('autocmd')
   augroup CFAMILY
     au!
 
-    autocmd FileType c,cpp,cc,h,hpp,javascript,rust setl cindent smartindent autoindent formatoptions=croql
+    autocmd FileType c,cpp,cc,h,hpp,javascript,rust setl cindent smartindent autoindent formatoptions=croql number
     autocmd FileType rust setl ts=2 sts=2 sw=2 tw=80
 
     if ! &diff
