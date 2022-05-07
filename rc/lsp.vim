@@ -51,7 +51,7 @@ let g:lsp_settings = {
 
 let g:lsp_settings_filetype_c = 'clangd'
 let g:lsp_settings_filetype_python = 'pyls'
-let g:lsp_settings_filetype_rust = 'ra_lsp_server'
+let g:lsp_settings_filetype_rust = 'rust-analyzer'
 let g:lsp_settings_enable_suggestions = 0
 
 " Highlights
