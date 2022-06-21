@@ -167,19 +167,19 @@ if has('autocmd')
     au!
 
     autocmd FileType c,cpp,cc,h,hpp,javascript,rust setl cindent smartindent autoindent formatoptions=croql number
-    autocmd FileType rust setl ts=2 sts=2 sw=2 tw=80
+    autocmd FileType rust setl ts=2 sts=2 sw=2 tw=100
 
     if ! &diff
       autocmd FileType c,cpp,cc,h,hpp,javascript,rust call EnableHighlightEOL()
     end
 
-    autocmd FileType cpp,hpp setl formatoptions=croqlj cino=N-s,t0,g0,(0,l1,i0 foldmethod=syntax
+    autocmd FileType cpp,hpp setl formatoptions=croqlj cino=N-s,t0,g0,(0,l1,i0 foldlevelstart=1 foldmethod=syntax
     autocmd FileType c,h setl cino=l1,t0,g0,(0,i0 formatoptions=tcqlron foldmethod=syntax
 
     autocmd FileType c,h,cpp,hpp call matchadd('Structure', '\W\zs\(ALWAYS_INLINE\|PACKED\|USED\|UNUSED\)')
     autocmd FileType c,h,cpp,hpp call matchadd('Type', '\W\zs\(int128_t\|uint128_t\)')
 
-    autocmd FileType rust setl foldmethod=syntax
+    autocmd FileType rust setl foldlevelstart=0 foldmethod=syntax
 
     autocmd FileType c,cpp,rust set omnifunc=lsp#complete
     autocmd FileType c,cpp,rust inoremap <C-Space> <C-x><C-o>
