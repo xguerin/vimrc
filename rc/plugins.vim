@@ -36,7 +36,7 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'mattn/vim-lsp-settings'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-fugitive', { 'commit': 'b7287bd5421da62986d9abf9131509b2c9f918e4' }
+Plug 'tpope/vim-fugitive',
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-repeat'
 Plug 'vim-scripts/Casetrate'
