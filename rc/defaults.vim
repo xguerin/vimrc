@@ -9,7 +9,7 @@ set shell=bash
 " Configuration
 
 set autoread                  " Automatically reload change
-set clipboard=unnamedplus     " Set the system clipboard (X11)
+set clipboard=unnamed         " Set the system clipboard (X11)
 set directory=$HOME/.vim/swap
 set expandtab                 " Use soft tabs
 set fileencoding=utf-8
@@ -30,6 +30,7 @@ set shiftround                " Round indent to multiple of shiftwidth
 set shiftwidth=2
 set showmatch
 set showtabline=2             " Always show tab line
+set smartcase                 " Case-sensitive search only with uppercase characters
 set softtabstop=2
 set t_vb=
 set tabstop=2

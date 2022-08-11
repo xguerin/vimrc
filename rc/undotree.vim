@@ -1,7 +1,11 @@
 let g:undotree_WindowLayout = 4
 
 if has("persistent_undo")
-  set undodir=~/.undodir/vim/
+  if has("nvim")
+    set undodir=~/.undodir/nvim/
+  else
+    set undodir=~/.undodir/vim/
+  endif
   set undofile
 endif
 
