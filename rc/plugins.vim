@@ -21,19 +21,20 @@ Plug 'wannesm/wmgraphviz.vim'   , { 'for': 'dot' }
 
 Plug 'Keithbsmiley/investigate.vim'
 Plug 'MattesGroeger/vim-bookmarks'
+Plug 'idanarye/vim-casetrate'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-oblique'
 Plug 'junegunn/vim-pseudocl'
 Plug 'kristijanhusak/vim-carbon-now-sh'
+Plug 'mattn/vim-lsp-settings'
 Plug 'mbbill/undotree'
 Plug 'moll/vim-bbye'
-Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/vim-lsp'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-fugitive',
